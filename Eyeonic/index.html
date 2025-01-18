@@ -1,0 +1,1088 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EyeSonic</title>
+    <link rel="shortcut icon" href="IMAGES/logo2.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="main">
+    <div class="custom-scrollbar">
+        <div class="custom-scrollbar-thumb"></div>
+    </div>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <a class="navbar-brand" href="#"><img src="Images/Brand-Logos/logo2.png" width="100px" height="60px" alt="Logo"></a>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#Frames" role="button" aria-expanded="false">
+                        Frames
+                      </a>
+                      <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#Frames" id="f1">MOSCOT</a></li>
+                          <li><a class="dropdown-item" href="#Frames" id="f2">Barton Perreira</a></li>
+                          <li><a class="dropdown-item" href="#Frames" id="f3">Jacques Marie Mage</a></li>
+                          <li><a class="dropdown-item" href="#Frames" id="f4">RAY BAN</a></li>
+                      </ul>
+                  </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#Lenses" role="button" aria-expanded="false">
+                          Lenses
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#Lenses" id="l1">Menicon</a></li>
+                            <li><a class="dropdown-item" href="#Lenses" id="l2">FreshLook</a></li>
+                            <li><a class="dropdown-item" href="#Lenses" id="l3">Persol</a></li>
+                            <li><a class="dropdown-item" href="#Lenses" id="l4">ACUVUE</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#Glasses" role="button" aria-expanded="false">
+                            Glasses
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#Glasses" id="g1">Contact Lenses</a></li>
+                            <li><a class="dropdown-item" href="#Glasses" id="g2">Sun Glasses</a></li>
+                            <li><a class="dropdown-item" href="#Glasses" id="g3">Blue Light Glasses</a></li>
+                            <li><a class="dropdown-item" href="#Glasses" id="g4">Bifocal glasses</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" aria-expanded="false">
+                            Introduction
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Location</a></li>
+                            <li><a class="dropdown-item" href="#AboutUss">About Us</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Store</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Contact">Contact Us</a>
+                    </li>
+                </ul>
+                <ul class="list-unstyled d-flex ms-auto me-2">
+                    <li class="nav-item dropdown icon mx-4 mt-3">
+                        <a class="nav-link" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                    </li>
+                    <form id="FormLog">
+                        <div class="input-group mt-3" id="inptbox">
+                            <input type="text" class="form-control-sm" id="userInp" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                            <button class="btn-primary" type="submit" id="sbtn"></button>
+                        </div>
+                    </form>
+                    <li class="nav-item text-info text-uppercase fs-3 username fst-italic fw-bolder mt-2">
+                        <div id="UsernameHere"><a class="nav-link" href="#"></a></div>                        
+                    </li>
+                    <li class="nav-item dropdown icon mx-4 mt-3">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-user"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#" id="LogInB">LogIn</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#" id="LogOutB">LogOut</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item icon mx-4 mt-3">
+                        <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-gear"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="main-section container">
+        <div class="text-content ">
+            <h1 class="col-12">Find Your Perfect Eyewear Look</h1>
+            <p>We're all about finding you that perfect pair. Experience the difference a perfect pair makes. Let's find yours together.</p>
+            <button class="btn btn-accent">Explore Shop</button>
+            <button class="btn btn-outline">Use Your Benefits</button>
+            <div class="ratings">
+                <img src="IMAGES/LANDING PAGE IMAGES/download.jfif" alt="User Image">
+                <span>50k+ Satisfied Customers</span>
+                <span class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </span>
+            </div>
+        </div>
+        <div class="card-container ">
+            <div class="card1">
+                <img src="Images/LANDING PAGE IMAGES/JAVE5605_JavelinBlackSatin_Gold_Front_700x.webp" alt="Frames">
+                <div class="card-text"><h5>FRAMES</h5></div>
+            </div>
+            <div class="card1">
+                <img src="IMAGES/LANDING PAGE IMAGES/Image2.jpg" alt="Lenses">
+                <div class="card-text"><h5>LENSES</h5></div>
+            </div>
+            <div class="card1">
+                <img src="images/LANDING PAGE IMAGES/grober-color-navy-pos-2.webp" alt="More Glasses">
+                <div class="card-text"><h5>MORE GLASSES</h5></div>
+            </div>
+        </div>
+    </section>
+    <section class="brand-cards">
+        <div class="container text-center">
+            <h2>More Glasses</h2>
+            <div class="row mt-4">
+                <div class="col-12 col-sm-6 col-md-4 mb-4">
+                    <div class="card h-100 card-effect" id="Frames">
+                        <div class="image-container">
+                            <img src="Images/MORE GLASSES/SUNGLASSES.jpg" alt="Brand 1" class="card-img-top">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Frames</h5>
+                            <a href="#" id="Frame" class="btn btn-primary">More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 mb-4">
+                    <div class="card h-100 card-effect" id="Lenses">
+                        <div class="image-container">
+                            <img src="IMAGES/MORE GLASSES/contact-lens.jpg" alt="Brand 2" class="card-img-top">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Lenses</h5>
+                            <a href="#" id="Lense" class="btn btn-primary">More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 mb-4">
+                    <div class="card h-100 card-effect" id="Glasses">
+                        <div class="image-container">
+                            <img src="IMAGES/MORE GLASSES/bf2.jpg" alt="Brand 3" class="card-img-top">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Glasses</h5>
+                            <a href="#" id="Glass" class="btn btn-primary">More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+              <div class="Glasses-Container bg-body-secondary card p-4 brandsinfo" id="brandsinfo">
+                <div class="container text-center">
+                    <h2>Explore Our Brands</h2>
+                    <div class="row mt-4">
+                        <div class="col-12 col-sm-6 col-md-3 mb-4">
+                            <div class="card h-100 card-effect">
+                                <div class="image-container">
+                                    <img src="IMAGES/FRAMES/download__1_-removebg-preview.png" alt="Brand 1" class="card-img-top">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">MOSCOT</h5>
+                                    <p class="card-text">Stylish and durable eyewear for every occasion.</p>
+                                    <a href="#" class="btn btn-primary" id="Moscot-brand">More Info</a>
+                                    <a href="#" class="btn-primary btn showAll-btn1">Show All</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-3 mb-4">
+                            <div class="card h-100 card-effect">
+                                <div class="image-container">
+                                    <img src="IMAGES/FRAMES/images.jfif" alt="Brand 2" class="card-img-top">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Barton Perreira</h5>
+                                    <p class="card-text">Experience unmatched comfort and elegance.</p>
+                                    <a href="#" class="btn btn-primary" id="Barton-brand">More Info</a>
+                                    <a href="#" class="btn-primary btn showAll-btn2">Show All</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-3 mb-4">
+                            <div class="card h-100 card-effect">
+                                <div class="image-container">
+                                    <img src="IMAGES/FRAMES/jacques-marie-mage-enzo-review-616x346_2x-removebg-preview.png" alt="Brand 3" class="card-img-top">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Jacques Marie Mage</h5>
+                                    <p class="card-text">Sophisticated designs for the modern individual.</p>
+                                    <a href="#" class="btn btn-primary" id="Jacques-brand">More Info</a>
+                                    <a href="#" class="btn-primary btn showAll-btn3">Show All</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-3 mb-4">
+                            <div class="card h-100 card-effect">
+                                <div class="image-container">
+                                    <img src="IMAGES/FRAMES/805289602057_render1-min.png" alt="Brand 4" class="card-img-top">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">RAY BAN</h5>
+                                    <p class="card-text">A premium brand for ultimate style.</p>
+                                    <a href="#" class="btn btn-primary" id="RAY-brand">More Info</a>
+                                    <a href="#" class="btn-primary btn showAll-btn4">Show All</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="Glasses-Container bg-body-secondary card p-4 brandsinfo" id="brandsinfo1">
+                <div class="container text-center">
+                    <h2>Explore Our Brands</h2>
+                    <div class="row mt-4">
+                        <div class="col-12 col-sm-6 col-md-3 mb-4">
+                            <div class="card h-100 card-effect">
+                                <div class="image-container">
+                                    <img src="IMAGES/LENSES/images (1).jfif" alt="Brand 1" class="card-img-top">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Menicon</h5>
+                                    <p class="card-text">Menicon is the only manufacturer in the world that is dedicated to all areas of contact lenses-related business</p>
+                                    <a href="#" class="btn btn-primary" id="Menicon-brand">More Info</a>
+                                    <a href="#" class="btn-primary btn showAll-btn5">Show All</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-3 mb-4">
+                            <div class="card h-100 card-effect">
+                                <div class="image-container">
+                                    <img src="IMAGES/LENSES/images.jfif" alt="Brand 2" class="card-img-top">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">FreshLook</h5>
+                                    <p class="card-text">FreshLook One-Day colored contact lenses by Alcon</p>
+                                    <a href="#" class="btn btn-primary" id="FreshLook-brand">More Info</a>
+                                    <a href="#" class="btn-primary btn showAll-btn6">Show All</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-3 mb-4">
+                            <div class="card h-100 card-effect">
+                                <div class="image-container">
+                                    <img src="IMAGES/LENSES/istockphoto-1446300082-612x612.jpg" alt="Brand 3" class="card-img-top">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Dailies</h5>
+                                    <p class="card-text">From regular and thin Persol Signature lenses to our top line of Premium Glass lenses by Barberini®</p>
+                                    <a href="#" class="btn btn-primary" id="Persol-brand">More Info</a>
+                                    <a href="#" class="btn-primary btn showAll-btn7">Show All</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-3 mb-4">
+                            <div class="card h-100 card-effect">
+                                <div class="image-container">
+                                    <img src="IMAGES/LENSES/scleral-lenses2-1.png" alt="Brand 4" class="card-img-top">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">ACUVUE</h5>
+                                    <p class="card-text">Designed to help with today's digitally intense lifestyle</p>
+                                    <a href="#" class="btn btn-primary" id="ACUVUE-brand">More Info</a>
+                                    <a href="#" class="btn-primary btn showAll-btn8">Show All</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="Glasses-Container bg-body-secondary card p-4 brandsinfo" id="brandsinfo2">
+                <div class="container text-center">
+                    <h2>Explore Our Brands</h2>
+                    <div class="row mt-4">
+                        <div class="col-12 col-sm-6 col-md-3 mb-4">
+                            <div class="card h-100 card-effect">
+                                <div class="image-container">
+                                    <img src="IMAGES/GLASSES/download.jfif" alt="Brand 1" class="card-img-top">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Contact Lenses</h5>
+                                    <p class="card-text">They are thin, clear, synthetic lenses that sit on the surface of the eye to correct vision problems</p>
+                                    <a href="#" class="btn btn-primary" id="contactlens-brand">More Info</a>
+                                    <a href="#" class="btn-primary btn showAll-btn9">Show All</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-3 mb-4">
+                            <div class="card h-100 card-effect">
+                                <div class="image-container">
+                                    <img src="IMAGES/GLASSES/ray-ban-aviator-sunglasses.png" alt="Brand 2" class="card-img-top">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Sun Glasses</h5>
+                                    <p class="card-text">By providing a barrier, helps to stop UV rays from hitting the eye and its inner structures directly.</p>
+                                    <a href="#" class="btn btn-primary" id="sunglass-brand">More Info</a>
+                                    <a href="#" class="btn-primary btn showAll-btn10">Show All</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-3 mb-4">
+                            <div class="card h-100 card-effect">
+                                <div class="image-container">
+                                    <img src="IMAGES/GLASSES/images1.jfif" alt="Brand 3" class="card-img-top">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Blue Light Glasses</h5>
+                                    <p class="card-text">They are designed to filter out the blue light rays commonly released from digital screens</p>
+                                    <a href="#" class="btn btn-primary" id="btglens-brand">More Info</a>
+                                    <a href="#" class="btn-primary btn showAll-btn11">Show All</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-3 mb-4">
+                            <div class="card h-100 card-effect">
+                                <div class="image-container">
+                                    <img src="IMAGES/GLASSES/bflens.jpeg" alt="Brand 4" class="card-img-top">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Bifocal Lenses</h5>
+                                    <p class="card-text">Glasses that have two prescriptions in one lens, allowing the wearer to see both close and far away</p>
+                                    <a href="#" class="btn btn-primary" id="bflens-brand">More Info</a>
+                                    <a href="#" class="btn-primary btn showAll-btn12">Show All</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+    </section><hr>
+    <section>
+        <div class="container text-center">
+            <h2>Our products</h2>
+            <button type="button" class="btn btn-primary">Frame</button>
+            <button type="button" class="btn btn-primary">Lense</button>
+            <button type="button" class="btn btn-primary">Glasses</button>
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-4 mb-4 Moscot">
+                    <div class="card h-100 card-effect">
+                        <div class="image-container">
+                            <img src="Images/MOSCOT/bjorn-color-pine-pos-2_1800x.webp" alt="Brand 1" class="card-img-top">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Moscot</h5>
+                            <a href="#" class="btn btn-primary">More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 mb-4 Moscot">
+                    <div class="card h-100 card-effect">
+                        <div class="image-container">
+                            <img src="Images/MOSCOT/dahven-color-olive-brown-pos-2_1800x.webp" alt="Brand 2" class="card-img-top">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Moscot</h5>
+                            <a href="#" class="btn btn-primary">More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 mb-4 Moscot">
+                    <div class="card h-100 card-effect">
+                        <div class="image-container">
+                            <img src="Images/MOSCOT/lemttse_2__UPDATEDALLIGNEDVERSION__1_1_1800x.webp" alt="Brand 3" class="card-img-top">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Moscot</h5>
+                            <a href="#" class="btn btn-primary">More</a>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="col-12 col-sm-6 col-md-4 mb-4 Moscot">
+                    <div class="card h-100 card-effect">
+                        <div class="image-container">
+                            <img src="IMAGES/MOSCOT/shtarker-color-gold-pos-2_f9e71f38-10dd-4eb8-8e8f-c1ea09af3b53_1800x.webp" alt="Brand 1" class="card-img-top">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Moscot</h5>
+                            <a href="#" class="btn btn-primary">More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 mb-4 Moscot">
+                    <div class="card h-100 card-effect">
+                        <div class="image-container">
+                            <img src="IMAGES/MOSCOT/gafilta-color-antique-gold-pos-2_1800x.webp" alt="Brand 2" class="card-img-top">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Moscot</h5>
+                            <a href="#" class="btn btn-primary">More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 mb-4 Barton">
+                    <div class="card h-100 card-effect">
+                        <div class="image-container">
+                            <img src="IMAGES/Barton Perreira/BADE5103_BaderGarnetGradient_RoseGold_Front_1800x.webp" alt="Brand 3" class="card-img-top">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Barton</h5>
+                            <a href="#" class="btn btn-primary">More</a>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="col-12 col-sm-6 col-md-4 mb-4 Barton">
+                    <div class="card h-100 card-effect">
+                        <div class="image-container">
+                            <img src="IMAGES/Barton Perreira/ELVG4903K_Elvgren_Brushed_Silver_Brushed_Gold_FRONT_1800x.webp" alt="Brand 1" class="card-img-top">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Barton</h5>
+                            <a href="#" class="btn btn-primary">More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 mb-4 Barton">
+                    <div class="card h-100 card-effect">
+                        <div class="image-container">
+                            <img src="IMAGES/Barton Perreira/JAVE5605_JavelinBlackSatin_Gold_Front_1800x.webp" alt="Brand 2" class="card-img-top">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Barton</h5>
+                            <a href="#" class="btn btn-primary">More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 mb-4 Barton">
+                    <div class="card h-100 card-effect">
+                        <div class="image-container">
+                            <img src="IMAGES/Barton Perreira/TRAS5901_Trask_Black_Satin_FRONT_1800x.webp" alt="Brand 3" class="card-img-top">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Barton</h5>
+                            <a href="#" class="btn btn-primary">More</a>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="col-12 col-sm-6 col-md-4 mb-4 Barton">
+                    <div class="card h-100 card-effect">
+                        <div class="image-container">
+                            <img src="IMAGES/Barton Perreira/BANK5003_Banks_50_Matte_Dusk_FRONT_400x.webp" alt="Brand 1" class="card-img-top">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Barton</h5>
+                            <a href="#" class="btn btn-primary">More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 mb-4 jacques">
+                    <div class="card h-100 card-effect">
+                        <div class="image-container">
+                            <img src="IMAGES/Jacques Marie Mage/Baudelaire2_Knox_RX_Front_ha9hz1.webp" alt="Brand 2" class="card-img-top">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">jacques</h5>
+                            <a href="#" class="btn btn-primary">More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 mb-4 jacques">
+                    <div class="card h-100 card-effect">
+                        <div class="image-container">
+                            <img src="IMAGES/Jacques Marie Mage/Baudelaire2_Lunar_RX_Front_dmli6m_b32c684b-2f63-41b1-8f4e-163c862e6ad4.webp" alt="Brand 3" class="card-img-top">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">jacques</h5>
+                            <a href="#" class="btn btn-primary">More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 mb-4 jacques">
+                    <div class="card h-100 card-effect">
+                        <div class="image-container">
+                            <img src="IMAGES/Jacques Marie Mage/Holden_Agar_RX_Front_Cropped_5377x3585_fcvjlu.webp" alt="Brand 1" class="card-img-top">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">jacques</h5>
+                            <a href="#" class="btn btn-primary">More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 mb-4 jacques">
+                    <div class="card h-100 card-effect">
+                        <div class="image-container">
+                            <img src="IMAGES/Jacques Marie Mage/Hollywood_Blonde_Front_Cropped_5377x3585_9b0b8568-0ae4-45d3-815c-6cfc3bb5c585.webp" alt="Brand 2" class="card-img-top">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">jacques</h5>
+                            <a href="#" class="btn btn-primary">More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 mb-4 jacques">
+                    <div class="card h-100 card-effect">
+                        <div class="image-container">
+                            <img src="IMAGES/Jacques Marie Mage/Molino55_Cobra_Front_Cropped_5377x3585_1b571e96-b6dc-48d2-9a12-5fa2a4b7dfdf.webp" alt="Brand 3" class="card-img-top">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">jacques</h5>
+                            <a href="#" class="btn btn-primary">More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 mb-4 rayban">
+                    <div class="card h-100 card-effect">
+                        <div class="image-container">
+                            <img src="IMAGES/RAYBAN/0RY9093V__3685__STD__shad__fr.avif" alt="Brand 3" class="card-img-top">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">rayban</h5>
+                            <a href="#" class="btn btn-primary">More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 mb-4 rayban">
+                    <div class="card h-100 card-effect">
+                        <div class="image-container">
+                            <img src="IMAGES/RAYBAN/0RY1528__3542__STD__shad__fr.avif" alt="Brand 3" class="card-img-top">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">rayban</h5>
+                            <a href="#" class="btn btn-primary">More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 mb-4">
+                    <div class="card h-100 card-effect rayban">
+                        <div class="image-container">
+                            <img src="IMAGES/RAYBAN/0RY9572V__4086__P21__shad__fr.avif" alt="Brand 3" class="card-img-top">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">rayban</h5>
+                            <a href="#" class="btn btn-primary">More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 mb-4 rayban">
+                    <div class="card h-100 card-effect">
+                        <div class="image-container">
+                            <img src="IMAGES/RAYBAN/0RY9594V__4090__P21__shad__fr.avif" alt="Brand 3" class="card-img-top">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">rayban</h5>
+                            <a href="#" class="btn btn-primary">More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 mb-4 rayban">
+                    <div class="card h-100 card-effect">
+                        <div class="image-container">
+                            <img src="IMAGES/RAYBAN/0RY9098V__3961__P21__shad__fr.avif" alt="Brand 3" class="card-img-top">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">rayban</h5>
+                            <a href="#" class="btn btn-primary">More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 mb-4 menicon">
+                    <div class="card h-100 card-effect">
+                        <div class="image-container">
+                            <img src="IMAGES/MENICON/caffe1.webp" alt="Brand 3" class="card-img-top">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">menicon</h5>
+                            <a href="#" class="btn btn-primary">More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 mb-4 menicon">
+                    <div class="card h-100 card-effect">
+                        <div class="image-container">
+                            <img src="IMAGES/MENICON/download.jfif" alt="Brand 3" class="card-img-top">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">menicon</h5>
+                            <a href="#" class="btn btn-primary">More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 mb-4 menicon">
+                    <div class="card h-100 card-effect">
+                        <div class="image-container">
+                            <img src="IMAGES/MENICON/macro-pupil-retina-human-eye-eyeball-female-eyes-long-eyelashes-close-up-macro-human-eye-closeup-blue-human-eye-human-321039189.webp" alt="Brand 3" class="card-img-top">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">menicon</h5>
+                            <a href="#" class="btn btn-primary">More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 mb-4 menicon">
+                    <div class="card h-100 card-effect">
+                        <div class="image-container">
+                            <img src="IMAGES/MENICON/istockphoto-179209374-612x612.jpg" alt="Brand 3" class="card-img-top">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">menicon</h5>
+                            <a href="#" class="btn btn-primary">More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 mb-4 menicon">
+                    <div class="card h-100 card-effect">
+                        <div class="image-container">
+                            <img src="IMAGES/MENICON/photo-1494869042583-f6c911f04b4c.jfif" alt="Brand 3" class="card-img-top">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">menicon</h5>
+                            <a href="#" class="btn btn-primary">More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 mb-4 FreshLook">
+                    <div class="card h-100 card-effect">
+                        <div class="image-container">
+                            <img src="IMAGES/FRESHLOOK/images.jfif" alt="Brand 3" class="card-img-top">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">FreshLook</h5>
+                            <a href="#" class="btn btn-primary">More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 mb-4 FreshLook">
+                    <div class="card h-100 card-effect">
+                        <div class="image-container">
+                            <img src="IMAGES/FRESHLOOK/FreshLook-Colorblends-Sterling-Gray-150x150.jpg" alt="Brand 3" class="card-img-top">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">FreshLook</h5>
+                            <a href="#" class="btn btn-primary">More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 mb-4 FreshLook">
+                    <div class="card h-100 card-effect">
+                        <div class="image-container">
+                            <img src="IMAGES/FRESHLOOK/images (1).jfif" alt="Brand 3" class="card-img-top">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">FreshLook</h5>
+                            <a href="#" class="btn btn-primary">More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 mb-4 FreshLook">
+                    <div class="card h-100 card-effect">
+                        <div class="image-container">
+                            <img src="IMAGES/FRESHLOOK/images (2).jfif" alt="Brand 3" class="card-img-top">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">FreshLook</h5>
+                            <a href="#" class="btn btn-primary">More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 mb-4 FreshLook">
+                    <div class="card h-100 card-effect">
+                        <div class="image-container">
+                            <img src="IMAGES/FRESHLOOK/images (3).jfif" alt="Brand 3" class="card-img-top">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">FreshLook</h5>
+                            <a href="#" class="btn btn-primary">More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 mb-4 Persol">
+                    <div class="card h-100 card-effect">
+                        <div class="image-container">
+                            <img src="IMAGES/Dailies/81uPQ5ZAn9L._AC_UF1000,1000_QL80_ (1).jpg" alt="Brand 3" class="card-img-top">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Dailies</h5>
+                            <a href="#" class="btn btn-primary">More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 mb-4 Persol">
+                    <div class="card h-100 card-effect">
+                        <div class="image-container">
+                            <img src="IMAGES/Dailies/81uPQ5ZAn9L._AC_UF1000,1000_QL80_.jpg" alt="Brand 3" class="card-img-top">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Dailies </h5>
+                            <a href="#" class="btn btn-primary">More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 mb-4 Persol">
+                    <div class="card h-100 card-effect">
+                        <div class="image-container">
+                            <img src="IMAGES/Dailies/natural-blue-natural.jpg" alt="Brand 3" class="card-img-top">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Dailies</h5>
+                            <a href="#" class="btn btn-primary">More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 mb-4 Persol">
+                    <div class="card h-100 card-effect">
+                        <div class="image-container">
+                            <img src="IMAGES/Dailies/OceanBlue_a4b4e2a0-d10c-4d94-be13-e429e2803b77.webp" alt="Brand 3" class="card-img-top">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Dailies</h5>
+                            <a href="#" class="btn btn-primary">More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 mb-4 Persol">
+                    <div class="card h-100 card-effect">
+                        <div class="image-container">
+                            <img src="IMAGES/Dailies/Untitled.webp" alt="Brand 3" class="card-img-top">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Dailies </h5>
+                            <a href="#" class="btn btn-primary">More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 mb-4 Acuvue">
+                    <div class="card h-100 card-effect">
+                        <div class="image-container">
+                            <img src="IMAGES/Acuvue/Acuvue-1Day-New-Define-Fresh-Blue-CUE (1).jpg" alt="Brand 3" class="card-img-top">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Acuvue</h5>
+                            <a href="#" class="btn btn-primary">More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 mb-4 Acuvue">
+                    <div class="card h-100 card-effect">
+                        <div class="image-container">
+                            <img src="IMAGES/Acuvue/Acuvue-1Day-New-Define-Fresh-Blue-CUE.jpg" alt="Brand 3" class="card-img-top">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Acuvue</h5>
+                            <a href="#" class="btn btn-primary">More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 mb-4 Acuvue">
+                    <div class="card h-100 card-effect">
+                        <div class="image-container">
+                            <img src="IMAGES/Acuvue/Acuvue-1Day-New-Define-Fresh-Green-_KR_-CUE.jpg" alt="Brand 3" class="card-img-top">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Acuvue</h5>
+                            <a href="#" class="btn btn-primary">More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 mb-4 Acuvue">
+                    <div class="card h-100 card-effect">
+                        <div class="image-container">
+                            <img src="IMAGES/Acuvue/Acuvue-1Day-New-Define-Fresh-Greyzel-_KR_-CUE.jpg" alt="Brand 3" class="card-img-top">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Acuvue</h5>
+                            <a href="#" class="btn btn-primary">More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 mb-4 Acuvue">
+                    <div class="card h-100 card-effect">
+                        <div class="image-container">
+                            <img src="IMAGES/Acuvue/Acuvue-Define-Vivid-Choco-_30-Pcs_-CUE_f3e39494-cc09-4367-bb08-fca8f263ec88.jpg" alt="Brand 3" class="card-img-top">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Acuvue</h5>
+                            <a href="#" class="btn btn-primary">More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 mb-4 contactlens">
+                    <div class="card h-100 card-effect">
+                        <div class="image-container">
+                            <img src="IMAGES/Contact Lenes/1-16-723x407.jpg.webp" alt="Brand 3" class="card-img-top">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">contactlens</h5>
+                            <a href="#" class="btn btn-primary">More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 mb-4 contactlens">
+                    <div class="card h-100 card-effect">
+                        <div class="image-container">
+                            <img src="IMAGES/Contact Lenes/APC_0334-Photoroom-723x407.jpg.webp" alt="Brand 3" class="card-img-top">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">contactlens</h5>
+                            <a href="#" class="btn btn-primary">More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 mb-4 contactlens">
+                    <div class="card h-100 card-effect">
+                        <div class="image-container">
+                            <img src="IMAGES/Contact Lenes/APC_0364-Photoroom-723x407.jpg.webp" alt="Brand 3" class="card-img-top">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">contactlens</h5>
+                            <a href="#" class="btn btn-primary">More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 mb-4 contactlens">
+                    <div class="card h-100 card-effect">
+                        <div class="image-container">
+                            <img src="IMAGES/Contact Lenes/APC_0374-Photoroom-723x407.jpg.webp" alt="Brand 3" class="card-img-top">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">contactlens</h5>
+                            <a href="#" class="btn btn-primary">More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 mb-4 contactlens">
+                    <div class="card h-100 card-effect">
+                        <div class="image-container">
+                            <img src="IMAGES/Contact Lenes/easy-sight-16-specs-105-723x362.jpg.webp" alt="Brand 3" class="card-img-top">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">contactlens</h5>
+                            <a href="#" class="btn btn-primary">More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 mb-4 sunglass">
+                    <div class="card h-100 card-effect">
+                        <div class="image-container">
+                            <img src="IMAGES/Sunglasses/APC_0525-Photoroom-723x407.jpg.webp" alt="Brand 3" class="card-img-top">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">sunglass</h5>
+                            <a href="#" class="btn btn-primary">More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 mb-4 sunglass">
+                    <div class="card h-100 card-effect">
+                        <div class="image-container">
+                            <img src="IMAGES/Sunglasses/APC_0573-Photoroom-723x407.jpg.webp" alt="Brand 3" class="card-img-top">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">sunglass</h5>
+                            <a href="#" class="btn btn-primary">More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 mb-4 sunglass">
+                    <div class="card h-100 card-effect">
+                        <div class="image-container">
+                            <img src="IMAGES/Sunglasses/APC_0666-Photoroom-Photoroom-723x407.jpg.webp" alt="Brand 3" class="card-img-top">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">sunglass</h5>
+                            <a href="#" class="btn btn-primary">More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 mb-4 sunglass">
+                    <div class="card h-100 card-effect">
+                        <div class="image-container">
+                            <img src="IMAGES/Sunglasses/Classy-silver-front-723x362.jpg.webp" alt="Brand 3" class="card-img-top">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">sunglass</h5>
+                            <a href="#" class="btn btn-primary">More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 mb-4 sunglass">
+                    <div class="card h-100 card-effect">
+                        <div class="image-container">
+                            <img src="IMAGES/Sunglasses/image00004-Photoroom-723x407.jpg.webp" alt="Brand 3" class="card-img-top">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">sunglass</h5>
+                            <a href="#" class="btn btn-primary">More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 mb-4 btglens">
+                    <div class="card h-100 card-effect">
+                        <div class="image-container">
+                            <img src="IMAGES/Blue Light Glasses/david-beckham-old7096-3.webp" alt="Brand 3" class="card-img-top">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">btglens</h5>
+                            <a href="#" class="btn btn-primary">More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 mb-4 btglens">
+                    <div class="card h-100 card-effect">
+                        <div class="image-container">
+                            <img src="IMAGES/Blue Light Glasses/focus-2518-3.webp" alt="Brand 3" class="card-img-top">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">btglens</h5>
+                            <a href="#" class="btn btn-primary">More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 mb-4 btglens">
+                    <div class="card h-100 card-effect">
+                        <div class="image-container">
+                            <img src="IMAGES/Blue Light Glasses/roposal-9510-3.webp" alt="Brand 3" class="card-img-top">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">btglens</h5>
+                            <a href="#" class="btn btn-primary">More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 mb-4 btglens">
+                    <div class="card h-100 card-effect">
+                        <div class="image-container">
+                            <img src="IMAGES/Blue Light Glasses/transparent-2034-3.webp" alt="Brand 3" class="card-img-top">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">btglens</h5>
+                            <a href="#" class="btn btn-primary">More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 mb-4 btglens">
+                    <div class="card h-100 card-effect">
+                        <div class="image-container">
+                            <img src="IMAGES/Blue Light Glasses/vision-1588-grey-3.webp " alt="Brand 3" class="card-img-top">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">btglens</h5>
+                            <a href="#" class="btn btn-primary">More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 mb-4 bflens">
+                    <div class="card h-100 card-effect">
+                        <div class="image-container">
+                            <img src="IMAGES/Bifocal Lenses/bifocal-lenses-hamilton.png" alt="Brand 3" class="card-img-top">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">bflens</h5>
+                            <a href="#" class="btn btn-primary">More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 mb-4 bflens">
+                    <div class="card h-100 card-effect">
+                        <div class="image-container">
+                            <img src="IMAGES/Bifocal Lenses/h=310,w=620,fit=fill,bg=fff.avif" alt="Brand 3" class="card-img-top">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">bflens</h5>
+                            <a href="#" class="btn btn-primary">More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 mb-4 bflens">
+                    <div class="card h-100 card-effect">
+                        <div class="image-container">
+                            <img src="IMAGES/Bifocal Lenses/RB_7190_Bi_c8084transblue_01_211f736a-6e1e-49d1-823c-2372e32bd77f_1024x1024.webp" alt="Brand 3" class="card-img-top">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">bflens</h5>
+                            <a href="#" class="btn btn-primary">More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 mb-4 bflens">
+                    <div class="card h-100 card-effect">
+                        <div class="image-container">
+                            <img src="IMAGES/Bifocal Lenses/rb_7211_bi_8205transgray_01_1024x1024.webp" alt="Brand 3" class="card-img-top">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">bflens</h5>
+                            <a href="#" class="btn btn-primary">More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 mb-4 bflens">
+                    <div class="card h-100 card-effect">
+                        <div class="image-container">
+                            <img src="IMAGES/Bifocal Lenses/sampleimage.jpg" alt="Brand 3" class="card-img-top">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">bflens</h5>
+                            <a href="#" class="btn btn-primary">More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="testimonials">
+        <div class="container text-center">
+            <h2>What Our Customers Say</h2>
+            <div class="row mt-4">
+                <div class="col-md-4 mb-4">
+                    <blockquote>
+                        <p>"EyeSonic has transformed how I see the world. Stylish and reliable!"</p>
+                        <footer>— Sarah J.</footer>
+                    </blockquote>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <blockquote>
+                        <p>"Top-notch quality and amazing customer service. Highly recommend!"</p>
+                        <footer>— John D.</footer>
+                    </blockquote>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <blockquote>
+                        <p>"The frames and lenses are both trendy and durable. EyeSonic is my go-to."</p>
+                        <footer>— Emily R.</footer>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="about-us" id="AboutUss">
+        <div class="container text-center">
+            <h2>About Us</h2>
+            <p>
+                At EyeSonic, we believe in merging style and vision. From luxury brands to everyday essentials, we offer 
+                the finest eyewear to suit every need. Explore our wide range of frames, lenses, and accessories, designed 
+                for both fashion and functionality.
+            </p>
+        </div>
+    </section>
+    
+    <section class="cta" id="Contact">
+        <div class="container text-center">
+            <h2>Ready to See Clearly?</h2>
+            <p>Browse our exclusive collection today and find your perfect eyewear.</p>
+            <a href="#" class="btn btn-primary">Shop Now</a>
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2024 EyeSonic. All rights reserved.</p>
+    </footer>
+    </div>
+    <script src="Jquery/jquery-3.7.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="JavaScript/script.js"></script>
+</body>
+</html>
